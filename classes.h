@@ -31,13 +31,11 @@ public:
 
         for (int i = 0; i < page_count; i++)
         {
-            for (int i = 0; i < page_count; i++)
-            {
-                char temp[10];
-                for (int j = 0; j < 10; j++)
-                    temp[j] = rand() % 26 + 97;
-                *(str + i) = temp;
-            }
+            string txt = "123456789";
+            char temp[10];
+            for (int j = 0; j < 10; j++)
+                temp[j] = rand() % 26 + 97;
+            *(str + i) = txt;
         }
     }
 
